@@ -1,1 +1,1 @@
-# Personla-Budgeting-App
+# Personal-Budgeting-App
