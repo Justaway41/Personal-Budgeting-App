@@ -12,10 +12,23 @@ class Register extends StatelessWidget {
             minimum: const EdgeInsets.symmetric(vertical: 50),
             child: SizedBox(
               child: Column(
-                children: const [
-                  Text(
-                    'Text here',
+                children: [
+                  const Image(
+                    image: AssetImage("register.jpg"),
                   ),
+                  SizedBox.expand(
+                    child: Row(
+                      children: const [
+                        TextField(
+                          obscureText: true,
+                          decoration: InputDecoration(
+                              border: InputBorder.none,
+                              labelText: 'Enter your email',
+                              hintText: 'joeshmoe@gmail.com'),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             )),
