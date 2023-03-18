@@ -6,33 +6,17 @@ class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF51916c),
-      body: Center(
-        child: SafeArea(
+        backgroundColor: const Color(0xFF51916c),
+        body: Center(
+          child: SafeArea(
             minimum: const EdgeInsets.symmetric(vertical: 50),
-            child: SizedBox(
-              child: Column(
-                children: [
-                  const Image(
-                    image: AssetImage("register.jpg"),
-                  ),
-                  SizedBox.expand(
-                    child: Row(
-                      children: const [
-                        TextField(
-                          obscureText: true,
-                          decoration: InputDecoration(
-                              border: InputBorder.none,
-                              labelText: 'Enter your email',
-                              hintText: 'joeshmoe@gmail.com'),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            )),
-      ),
-    );
+            child: Column(
+              children: const [
+                Text("Hello World"),
+                Image(image: AssetImage('register.jpg'))
+              ],
+            ),
+          ),
+        ));
   }
 }
